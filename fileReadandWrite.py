@@ -9,7 +9,7 @@ def read_and_modify_file():
             content = file.read() 
             modified_content = content.upper()  
 
-        # Write the modified content to a new file
+        
         with open(output_filename, 'w') as new_file:
             new_file.write(modified_content)
 
@@ -22,5 +22,5 @@ def read_and_modify_file():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# Call the function
+
 read_and_modify_file()
